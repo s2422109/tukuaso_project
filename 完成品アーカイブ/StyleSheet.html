@@ -1,0 +1,133 @@
+<style>
+
+    body {
+      background-image: url(https://illust-ryokka.jp/wp-content/uploads/2022/04/Scenery-tanabata-4.png);
+      color: #ffffff;  /* テキストを白色に */
+      background-size: cover;  /* 画像をウィンドウサイズに合わせる */
+      background-position: center;  /* 画像を中央に配置 */
+    }
+    
+    .card {
+      background-color: rgba(255, 255, 255, 0.9);  /* カードの背景を半透明白に */
+      color: #000;  /* カード内のテキストは黒に */
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .steps {
+      padding-left: 20px;
+    }
+    
+    .steps li {
+      margin-bottom: 1rem;
+    }
+    
+    .qr-code {
+      max-width: 200px;
+      height: auto;
+    }
+    
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .feature-item {
+      text-align: center;
+      padding: 1.5rem;
+    }
+    
+    .feature-item i {
+      font-size: 2.5rem;
+      color: #28a745;
+      margin-bottom: 1rem;
+    }
+    
+    .feature-item h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+      
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    /*  星１ */
+    .container::before {
+        content: '';
+        position: fixed;
+        top: -10%;  /* 画面外から開始 */
+        left: -10%;  /* 画面外から開始 */
+        width: 10%;
+        height: 10%;
+        pointer-events: none;
+        background-image: url('https://tegakisozai.com/wp-content/uploads/2021/06/kigou_simple_hosi.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 1;
+        animation: shootingstar 4s linear;  /* アニメーションを追加 */
+        z-index: -1; /* 重なり順を制御 */
+    }
+    
+    /* 流れ星のアニメーション定義 */
+    @keyframes shootingstar {
+        0% {
+            transform: translate(-10vw, -10vh);
+            opacity: 0;
+        }
+        10% {
+            opacity: 0.5;
+        }
+        90% {
+            opacity: 0.5;
+        }
+        100% {
+            transform: translate(100vw, 100vh);  /* 右下に移動 */
+            opacity: 0;
+        }
+    }
+    
+    /* 星２ */
+    .container::after {
+        content: '';
+        position: fixed;
+        top: 20%;
+        left: -10%;
+        width: 8%;
+        height: 8%;
+        pointer-events: none;
+        background-image: url('https://tegakisozai.com/wp-content/uploads/2021/06/kigou_simple_hosi.png');
+        opacity: 1;
+        background-size: contain; /* 追加 */
+        background-repeat: no-repeat; /* 追加 */
+        animation: shootingstar2 3s linear infin;
+        animation-delay: 2s;  /* 少し遅れて開始 */
+        z-index: -1;
+    }
+    
+    @keyframes shootingstar2 {
+        0% {
+            transform: translate(-10%, 0);
+            opacity: 0;
+        }
+        10% {
+            opacity: 0.5;
+        }
+        90% {
+            opacity: 0.5;
+        }
+        100% {
+            transform: translate(100vw, 100vh);
+            opacity: 0;
+        }
+    }
+    
+    </style>
