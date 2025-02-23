@@ -1,0 +1,118 @@
+<style>
+
+    header h1 {
+        font-size: 4rem; /* フォントサイズを大きく */
+        font-weight: bold; /* 太字 */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* テキストシャドウ追加 */
+        margin-bottom: 1rem;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif; /* 日本語フォント */
+    }
+    
+    body {
+      background-image: url(https://illust-ryokka.jp/wp-content/uploads/2022/04/Scenery-tanabata-4.png);
+      color: #ffffff;  /* テキストを白色に */
+      background-size: cover;  /* 画像をウィンドウサイズに合わせる */
+      background-position: center;  /* 画像を中央に配置 */
+    }
+    
+    .hage {
+        font-size: 3rem; /* フォントサイズを大きく */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* テキストシャドウ追加 */
+        margin-bottom: 1rem;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif; /* 日本語フォント */
+    }
+    
+    
+    .hoge {
+        font-size: 5rem; /* フォントサイズを大きく */
+        font-weight: bold; /* 太字 */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* テキストシャドウ追加 */
+        margin-bottom: 1rem;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif; /* 日本語フォント */
+    }
+    
+    .lead{
+        font-size: 2rem; /* フォントサイズを大きく */
+        font-weight: bold; /* 太字 */
+        margin-bottom: 1rem;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif; /* 日本語フォント */
+    }
+    
+    .card-title {
+      font-size: 3rem;
+    }
+    
+    .card {
+      background-color: rgba(255, 255, 255, 0.9);  /* カードの背景を半透明白に */
+      color: #000;  /* カード内のテキストは黒に */
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .steps {
+      padding-left: 20px;
+    }
+    
+    .steps li {
+      font-size:2rem;
+      margin-bottom: 1rem;
+      margin-left: 20px;
+    }
+    
+    .qr-code {
+      max-width: 200px;
+      height: auto;
+    }
+    
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .feature-item {
+      text-align: center;
+      padding: 1.5rem;
+    }
+    
+    .feature-item i {
+      font-size: 2.5rem;
+      color: #28a745;
+      margin-bottom: 1rem;
+    }
+    
+    .feature-item h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+      
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    /* containerの位置指定を追加 */
+    #container {
+        position: relative;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+    
+    .shooting-star {
+        position: fixed;
+        width: 50px;  /* 固定サイズに変更 */
+        height: 50px; /* 固定サイズに変更 */
+        pointer-events: none;
+        background-image: url('https://tegakisozai.com/wp-content/uploads/2021/06/kigou_simple_hosi.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;   /* z-indexを正の値に変更 */
+    }
+    
+    </style>
