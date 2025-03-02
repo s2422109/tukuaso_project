@@ -1,6 +1,6 @@
 // LINE BotとGemini APIの設定
 const LINE_CHANNEL_ACCESS_TOKEN = 'Ag86AAjTz2q4GSVGLORBPbQufudmyprCI3j5K6aOe9M+H2BeQYEsoQxBeNOSbyhniwFtoow5Kl8TFyt4Ja/8J+ebb6ahqBmVWb7AlQ8aU6GFORiXOuiIUfFBvRKERgWA7tnzabyaucaA9lkrHZ8a7wdB04t89/1O/w1cDnyilFU=';
-const GEMINI_API_KEY = 'AIzaSyBWOujCNM9LpKmqPd-EZlPMGQLqyqwbqDs';
+const GEMINI_API_KEY = 'AIzaSyCTCEx0DJBZkcKNaYB6-7CE0LbP7JMVnJM';
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${GEMINI_API_KEY}`;
 
 // ユーザーの状態を保存するためのプロパティストア
